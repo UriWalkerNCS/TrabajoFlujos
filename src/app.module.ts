@@ -5,6 +5,10 @@ import { DogsModule } from './dogs/dogs.module';
 
 @Module({
   imports: [DogsModule],
+import { CatsModule } from './cats/cats.module';
+
+@Module({
+  imports: [CatsModule],
   controllers: [AppController],
   providers: [AppService],
 })
